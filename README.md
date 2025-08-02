@@ -1,3 +1,7 @@
+# Rhythmic Sharing
+<img width="1733" height="1059" alt="fig1" src="https://github.com/user-attachments/assets/83e3e310-312e-4dd6-957b-206e7fa80671" />
+
+
 ## Introduction
 _**Disclaimer: This introduction is adapted from the doctoral disseration written by Hoony Kang.**_
 
@@ -5,7 +9,7 @@ Artificial neural networks train by finding optimal weights, which are the stren
 
 Yet the living neural networks of brains can rapidly infer contextual changes in real-time, adapt their behavior in accordance with this new environment, and even induce how the organism should act in an unencountered environment. Here, we introduce a learning paradigm that associates learning with the coordination of oscillations of link strength. The paradigm is inspired by the physics of oscillatory rhythms of the mechanical structures that support synapses. It yields rapid adaptation and learning in neural networks while maintaining robustness. Links can rapidly change their coordination of oscillations, endowing the network with the ability to sense subtle context changes in an unsupervised manner. In other words, the network generates the missing contextual tokens required to perform as a generalist AI architecture, capable of predicting dynamics in multiple contexts. Furthermore, the oscillations themselves allow the network to extrapolate dynamics to never-seen-before contexts. This oscillation-based learning paradigm provides a starting point for novel models of learning and cognition. Because it is agnostic to the specific details of the neural network architecture, this paradigm also opens the door for introducing rapid adaptation and learning capabilities into leading AI models.
 
-This model utilizes dynamical systems theory and algebraic topology (homotopy) theory. Specifically, the model may be thought of as involving dynamic interactions between a network of 0-simplices (nodes) and a network of 1-simplices (links), each evolving as a unique dynamical system. By simply needing to specify the mean phase variables $(R, \langle \Phi\rangle)$ to steer the network into a desired basin of attraction, the dimension required to specify the control object is effectively reduced from the hypercube in $\mathbb{R}^{N_n}$ to annuli in $\mathbb{R}^2$.
+This minimal model utilizes dynamical systems theory and algebraic topology (homotopy) theory. Specifically, the model may be thought of as involving dynamic interactions between a network of 0-simplices (nodes) and a network of 1-simplices (links), each evolving as a unique dynamical system. By simply needing to specify the mean phase variables $(R, \langle \Phi\rangle)$ to steer the network into a desired basin of attraction, the dimension required to specify the control object is effectively reduced from the hypercube in $\mathbb{R}^{N_n}$ to annuli in $\mathbb{R}^2$.
 
 ## What is included in this repository
 
@@ -14,14 +18,12 @@ This model utilizes dynamical systems theory and algebraic topology (homotopy) t
 - **rhythmic_sharing_example.ipynb** : Jupyter notebook of the algorithm using nonstationary data from the Thomas system, as used in the manuscript. Prediction of stationary states is not shown in the notebook, as that is up to the user to define which $\langle \Phi\rangle$ to freeze. Instead, an output trajectory showing the network continuously hopping through various individual attractors as $\langle \Phi\rangle$ evolves linearly is shown in the notebook output.
 - **thomas_data_generate.nb** : Mathematica notebook used to generate data of Thomas system.
   
-
-
 ## Compatibility
 Python 3.9.13
 
 Mathematica 13.2.0.0 (only used for sample data generation; not necessary to run the algorithm)
 
-No GPU is needed. For the Thomas system, runtime is on the order of seconds if executing the code locally on your laptop.
+No GPU is needed. For the Thomas system (training data of size (3,~7500)), runtime is on the order of seconds if executing the code locally on your laptop's CPU.
 
 ## Intellectual property notice
 The code available on this page is based on the algorithm filed under U.S. Provisional Application No. 63/716,102.
