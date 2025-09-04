@@ -1,4 +1,4 @@
-# Rhythmic Sharing - Glial-inspired algorithm based on dynamical directed simplices
+# Rhythmic Sharing: Glial-inspired algorithm based on emergent behavior of dynamical directed simplices
 <img width="1733" height="1059" alt="fig1" src="https://github.com/user-attachments/assets/83e3e310-312e-4dd6-957b-206e7fa80671" />
 
 
